@@ -29,7 +29,6 @@ for attempt in range(MAX_RETRIES):
 
     with open("generated_code.py", "w") as f:
         f.write(generated_code)
-
     result = run_code("generated_code.py")
 
     if result["success"]:
